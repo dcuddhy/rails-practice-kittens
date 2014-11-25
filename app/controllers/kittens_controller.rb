@@ -4,4 +4,6 @@ class KittensController < ApplicationController
     @kittens = Kitten.all
   end
 
+  
+
 end
