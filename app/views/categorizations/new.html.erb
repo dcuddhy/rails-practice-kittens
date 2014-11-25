@@ -1,4 +1,12 @@
-NEW
+
+
+<% if @categorization.errors.present? %>
+<ul>
+  <% @categorization.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
+<% end %>
 
 
 <%= form_for [@kitten, @categorization] do |f| %>
@@ -14,7 +22,7 @@ NEW
   {}
 ) %>
 
-<%= f.submit "How Cute is THAT?" %>
+<%= f.submit "Add Category" %>
 
 
 

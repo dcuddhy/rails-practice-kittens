@@ -1,5 +1,9 @@
 <h1>Kittens!</h1>
 
+<% if notice.is_a? String %>
+<div class="text-center alert alert-info"><%= notice %></div>
+<% end %>
+
 <div class="kittens-container">
   <%= render @kittens %>
 </div>
